@@ -4,106 +4,121 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REVOLUT</title>
 </head>
 <body>
+    <!-- general container -->
     <div class="container">
-        <div class="nav-bar clearfix">
-            <div class="left-nav fl pstn">
+        <!-- navbar -->
+        <div class="nav-bar flex-container">
+            <!-- left-nav -->
+            <div class="left-nav  pstn">
                 <ul>
                     <li><a href="#"><img src="img/logo.png" alt=""></a></li>
                     <li class="p-r-l"><a href="#">Personal</a></li>
                     <li class="p-r-l"><a href="#">Business</a></li>
                 </ul>
             </div>
-            <div class="right-nav fr pstn">
-                <ul>
-                    <li class="pstn"><a href="#">Features</a></li>
-                    <li class="p-r-l pstn"><a href="#">Plans</a></li>
-                    <li class="p-r-l pstn"><a href="#">About us</a></li>
-                    <li class="p-r-l pstn"><a href="#">Help</a></li>
-                    <li class="p-r-l pstn"><button class="first-button">Sign in</button></li>
-                    <li class="p-l"><button class="second-button"><a href="#">Get the App</a></button></li>
-                </ul>
-            </div>
-            <div class="dropdown hid">
-                <div>
-                    <img src="" alt="">
-                    <ul>
-                        <li>ACCOUNT</li>
-                        <li>Budget & Analytics</li>
-                        <li>Cards</li>
-                        <li>Junior account</li>
-                        <li>Pockets</li>
-                    </ul>
-                </div>
-                <div class="p-r-l-m hid">
-                    <ul>
-                        <img src="" alt="">
-                        <li>WEALTH</li>
-                        <li>Crypto</li>
-                        <li>Commodities</li>
-                        <li>Vaults</li>
-                    </ul>
-                </div>
-                <div class="p-r-l-m hid">
-                    <ul>
-                        <i class="fa fa-exchange" aria-hidden="true"></i>
-                        <li>PAYMENTS</li>
-                        <li>Money Transfers</li>
-                        <li>Group bills</li>
-                        <li>Subscriptions</li>
-                    </ul>
-                </div>
-                <div class="hid">
-                    <ul>
-                        <img src="" alt="">
-                        <li>EXTRAS</li>
-                        <li>Donations</li>
-                        <li>Overseas insurance</li>
-                        <li>Device insurance</li>
-                        <li>Safety</li>
-                    </ul>
-                </div>
-            </div>
-            <div>
-                <ul class="dropdown hide">
-                    <li>Standard</li>
-                    <li>Plus</li>
-                    <li>Premium</li>
-                    <li>Metal</li>
-                    <li>Compare plans</li>
-                </ul>
-            </div>
-            <div>
-                <ul class="dropdown hide">
-                    <li>About us</li>
-                    <li>Blog</li>
-                    <li>Leadership</li>
-                    <li>Newsroom</li>
-                    <li>Affiliates</li>
-                    <li>Influencers</li>
-                    <li>Careers</li>
-                    <li>Culture</li>
-                    <li>Diversity & Inclusion</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-            <div>
-                <ul class="dropdown hide">
-                    <li>Help center</li>
-                    <li>Community</li>
-                    <li>Security</li>
-                    <li>System Status</li>
-                    <li>Developer APls</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+            <!-- end left-nav -->
 
+            <!-- right-nav -->
+            <div class="right-nav pstn">
+                <ul>
+                    <li class="p-r-l pstn with-dropdown"><a href="#">Features</a>
+                        <div class="dropdown dropdown-properties first hide">
+                            <div>
+                                <ul>
+                                    <i class="fa fa-university" aria-hidden="true"></i>
+                                    <li>ACCOUNT</li>
+                                    <li>Budget & Analytics</li>
+                                    <li>Cards</li>
+                                    <li>Junior account</li>
+                                    <li>Pockets</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <i class="fa fa-line-chart" aria-hidden="true"></i>
+                                    <li>WEALTH</li>
+                                    <li>Crypto</li>
+                                    <li>Commodities</li>
+                                    <li>Vaults</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <i class="fa fa-exchange" aria-hidden="true"></i>
+                                    <li>PAYMENTS</li>
+                                    <li>Money Transfers</li>
+                                    <li>Group bills</li>
+                                    <li>Subscriptions</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <li>EXTRAS</li>
+                                    <li>Donations</li>
+                                    <li>Overseas insurance</li>
+                                    <li>Device insurance</li>
+                                    <li>Safety</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="p-r-l pstn with-dropdown"><a href="#">Plans</a>
+                        <div class="dropdown dropdown-properties second hide">
+                            <ul>
+                                <li class="m-t">Standard</li>
+                                <li>Plus</li>
+                                <li>Premium</li>
+                                <li>Metal</li>
+                                <li>Compare plans</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="p-r-l pstn with-dropdown"><a href="#">About us</a>
+                        <div class="dropdown dropdown-properties third hide">
+                            <ul>
+                                <li class="m-t">About us</li>
+                                <li>Blog</li>
+                                <li>Leadership</li>
+                                <li>Newsroom</li>
+                                <li>Affiliates</li>
+                                <li>Influencers</li>
+                                <li>Careers</li>
+                                <li>Culture</li>
+                                <li>Diversity & Inclusion</li>
+                                <li>Contact</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="p-r-l pstn with-dropdown"><a href="#">Help</a>
+                        <div class="dropdown dropdown-properties fourth hide">
+                            <ul>
+                                <li class="m-t">Help center</li>
+                                <li>Community</li>
+                                <li>Security</li>
+                                <li>System Status</li>
+                                <li>Developer APls</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="pstn"><button class="first-button"><a href ="#">Sign in</a></button></li>
+                    <li><button class="second-button"><a href="#">Get the App</a></button></li>
+                </ul>
+            </div>
+            <!-- end right-nav -->
+        </div>
+        <!-- end navbar -->
+    </div>
+    <!-- end general container -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

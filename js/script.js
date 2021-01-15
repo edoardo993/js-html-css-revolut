@@ -1,0 +1,9 @@
+$('.with-dropdown').click(function(){
+     $(this).find('.dropdown').toggleClass('hide')
+ })
+ $('.with-dropdown').mouseenter(function(){
+     $(this).find('.dropdown').removeClass('hide')
+ })
+ $('.with-dropdown').mouseleave(function(){
+    $(this).find('.dropdown').addClass('hide')
+})

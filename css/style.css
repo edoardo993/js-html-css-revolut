@@ -5,20 +5,26 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+.flex-container{
+    display: flex
+}
 .container{
     margin: 0 auto;
-    width: 1300px
+    width: 1200px
 }
 .p-l{
     padding-left: 15px
 }
 .p-r-l{
-    padding-left: 35px
+    margin-right: 35px
 }
 .p-r-l-m{
     padding: 0 50px 0 50px
 }
-.pst{
+.m-t{
+    margin-top: 20px
+}
+.pstn{
     position: relative
 }
 a{
@@ -28,16 +34,15 @@ a{
 .hide{
     display: none
 }
-.clearfix:after{
-    display: table;
-    content: "";
-    clear: both;
+ul li{
+    list-style-type: none;
 }
-.fl{
-    float: left
-}
-.fr{
-    float: right
+.dropdown-properties{
+    border-radius: 10px;
+    box-shadow: 4px 0 7px 0 #ccc;
+    padding: 0 30px 0 30px;
+    font-size: 15px;
+    color: #8C8E8F
 }
 /* end utility classes */
 
@@ -52,7 +57,8 @@ a{
     margin-right: 25px
 }
 .left-nav ul li,
-.right-nav ul li{
+.right-nav ul li,
+.dropdown div{
     display: inline-block
 }
 .first-button{
@@ -60,11 +66,12 @@ a{
     box-shadow: none;
     border: #F0F0F0;
     border-radius: 10px;
-    padding: 11px 25px 11px 25px;
+    padding: 9px 25px 9px 25px;
     color: #191C1F;
     font-weight: bold;
     font-size: 14px;
-    color: #000
+    color: #000;
+    margin-right: 15px
 }
 .second-button{
     background: #191C1F;
@@ -77,12 +84,11 @@ a{
     font-size: 13px;
     color: #ccc
 }
-.dropdown{
+.dropdow{
     position: absolute;
     top: 0;
     right: 0;
     transform: translate(-10%,42%);
-    /* border: 1px solid black; */
     border-radius: 10px;
     box-shadow: 4px 0 7px 0 #ccc;
     padding: 0 20px 0 20px;
@@ -90,14 +96,21 @@ a{
     color: 
 }
 .dropdown ul li{
-    display: block;
-    color: #8C8E8F
+    /* display: block; */
+    color: #8C8E8F;
+    padding-bottom: 20px
 }
-.dropdown div{
-    display: inline-block
-
+.dropdown.first,
+.dropdown.second,
+.dropdown.third,
+.dropdown.fourth{
+    position: absolute;
+    top: 30px
 }
-.dropdown div ul li{
-    padding-bottom: 20px;
-
+.nav-bar{
+    justify-content: space-between;
+}
+.left-nav li a:hover,
+.p-r-l a:hover{
+    color: #000
 }
